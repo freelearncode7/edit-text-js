@@ -11,6 +11,7 @@
 <body>
     <div class="container">
         <h1> I am a </h1><span id="second-text"></span>
+        <div class="line-type"></div>
     </div>
     <script>
         let second_text = document.querySelector('#second-text');
@@ -19,14 +20,14 @@
                 second_text.textContent = "Omid";
             }, 0)
             setTimeout(() => {
-                second_text.textContent = "Web Developer";
-            }, 4000)
+                second_text.textContent = "Developer";
+            }, 2000)
             setTimeout(() => {
                 second_text.textContent = "Designer";
-            }, 8000)
+            }, 4000)
         }
         textload();
-        setInterval(textload, 12000)
+        setInterval(textload, 6000)
     </script>
 </body>
 
