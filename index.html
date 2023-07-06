@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>freelearn.code</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1> I am a </h1><span id="second-text"></span>
+    </div>
+    <script>
+        let second_text = document.querySelector('#second-text');
+        const textload = () => {
+            setTimeout(() => {
+                second_text.textContent = "Omid";
+            }, 0)
+            setTimeout(() => {
+                second_text.textContent = "Web Developer";
+            }, 4000)
+            setTimeout(() => {
+                second_text.textContent = "Designer";
+            }, 8000)
+        }
+        textload();
+        setInterval(textload, 12000)
+    </script>
+</body>
+
+</html>
